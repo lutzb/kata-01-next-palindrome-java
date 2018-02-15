@@ -34,6 +34,11 @@ class NextPalindromeText {
 	}
 	
 	@Test
+	void testNextPalindromeWithLargeInput() {
+		assertEquals(456707654, NextPalindrome.getNextPalindrome(456705231));
+	}
+	
+	@Test
 	void testNextPalindromeWithDigitRollover() {
 		assertEquals(101, NextPalindrome.getNextPalindrome(99));
 	}
